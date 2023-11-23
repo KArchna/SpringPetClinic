@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Validate') {
             steps {
-                sh 'mvn validate'
+                bat sh 'mvn validate'
             }
         }
         stage('Compile') {
